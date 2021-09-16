@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Doe</title>
+
+    <!-- linking css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <!-- adding favicon -->
+    <link rel="shortcut icon" href="./images/profile.jpg" type="image/x-icon" />
+
+    <!-- adding fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- adding fonts  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital@1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- adding boxicons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- linking scroll reveal  -->
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+      window.sr = ScrollReveal({
+        distance: "50px",
+        duration: 1000,
+        easing: "ease",
+        mobile: true,
+        reset: true,
+        viewFactor: 0.4,
+      });
+    </script>
+  </head>
+  <body>
+    <!-- navigation section  -->
+    <div class="container">
+      <div class="logo">
+        <img src="./images/profile.jpg" alt="" />
+      </div>
+      <i class="fa fa-fw fa-bars burger"></i>
+      <div class="navigation">
+        <nav>
+          <ul class="nav-links">
+            <li class="nav"><a href="#" class="links-nav">Home</a></li>
+            <li class="nav"><a href="#" class="links-nav">About</a></li>
+            <li class="nav"><a href="#" class="links-nav">Skills</a></li>
+            <li class="nav"><a href="#" class="links-nav">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Home section  -->
+    <div class="home" id="home">
+        <h1 style="color: rgb(161, 240, 109);">Hello,</h1>
+        <h2>From John Doe</h2>
+        <p class="typing-effect">a Web Developer...............................</p>
+        <div class="social-media">
+            <a href="#"><i class="fa fa-fw fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-fw fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-fw fa-twitch"></i></a>
+            <a href="#"><i class="fa fa-fw fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <!-- About Section  -->
+    <h3 class="top" id="about">About</h3>
+    <div class="about-sec">
+        <div class="img">
+            <img src="./images/profile.jpg" alt="">
+        </div>
+        <div class="about">
+            <h2 class="top">I'm john</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nostrum, placeat possimus blanditiis quam et voluptatum maiores, quas hic id odio nihil aliquid aliquam rem cum voluptatem deserunt porro ad!</p>
+        </div>
+    </div>
+
+    <!-- Skills Section  -->
+    <h3 id="skills" class="top">Skills</h3>
+    <div class="skills">
+        <div>
+            <h2 class="top">Profesional Skills</h2>
+            <p class="skills__text">The following are the skills of John Doe.</p>
+            <div class="skills__data left">
+                <div class="skills__names">
+                    <i class='bx bxl-html5 skills__icon'></i>
+                    <span class="skills__name">HTML5</span>
+                </div>
+                <div class="skills__bar skills__html">
+
+                </div>
+                <div>
+                    <span class="skills__percentage">95%</span>
+                </div>
+            </div>
+            <div class="skills__data right">
+                <div class="skills__names">
+                    <i class='bx bxl-css3 skills__icon'></i>
+                    <span class="skills__name">CSS3</span>
+                </div>
+                <div class="skills__bar skills__css">
+
+                </div>
+                <div>
+                    <span class="skills__percentage">80%</span>
+                </div>
+            </div>
+            <div class="skills__data left">
+                <div class="skills__names">
+                    <i class='bx bxl-javascript skills__icon'></i>
+                    <span class="skills__name">JAVASCRIPT</span>
+                </div>
+                <div class="skills__bar skills__js">
+
+                </div>
+                <div>
+                    <span class="skills__percentage">50%</span>
+                </div>
+            </div>
+            <div class="skills__data right">
+                <div class="skills__names">
+                    <i class='bx bxs-video skills__icon'></i>
+                    <span class="skills__name">Editing</span>
+                </div>
+                <div class="skills__bar skills__ux">
+
+                </div>
+                <div>
+                    <span class="skills__percentage">90%</span>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section  -->
+    <h3 class="top" id="contact">Contact</h3>
+    <div class="contact">
+        <form action="" id="contact-form">
+            <input type="text" name="name" id="text" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit" class="submit-btn">Send</button>
+        </form>
+    </div>
+
+    <!-- Footer Section  -->
+    <footer class="foot">
+        <h2>John Doe</h2>
+        <p>Copyright &copy; 2021. All rights Reserved.</p>
+    </footer>
+
+    <!-- Back to Top button  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to Top">Top</button>
+  </body>
+  <script src="./js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</html>

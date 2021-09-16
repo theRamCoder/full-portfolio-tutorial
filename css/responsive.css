@@ -1,0 +1,103 @@
+@media only screen and (max-width: 600px) {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    width: 100%;
+  }
+  .logo {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(34, 33, 33);
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+  }
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .navigation nav ul {
+    flex-direction: column;
+  }
+  .fa-bars {
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    visibility: visible;
+  }
+  .navigation nav {
+    margin: 7px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+  }
+  .navigation nav ul {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+  }
+  .nav-items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50%;
+  }
+  .links-nav {
+    margin-bottom: 20px;
+    animation: navLinkFade 0.6s linear;
+  }
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  .about-sec {
+    display: block;
+  }
+  .about-sec img {
+    margin-left: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+  .about h2 {
+    margin-left: 20px;
+    margin-right: 0%;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+  }
+  .about p {
+    margin: 0%;
+    padding: 0%;
+    padding-left: 40px;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+  .skills h2 {
+    margin-left: 20px;
+  }
+}
